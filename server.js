@@ -8,3 +8,11 @@ app.get("/", (req, res) => {
 app.listen(3000, () => {
   console.log("Server running on port 3000");
 });
+const mongoose = require("mongoose");
+
+mongoose.connect("mongodb+srv://rishi620:Rishi@cgu@cluster0.xxxxx.mongodb.net/mydb", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
+.then(() => console.log("✅ Database connected successfully"))
+.catch(err => console.error("❌ DB connection error:", err));
