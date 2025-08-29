@@ -10,7 +10,7 @@ app.listen(3000, () => {
 });
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb+srv://rishi620:Rishi@cgu@cluster0.xxxxx.mongodb.net/mydb", {
+mongoose.connect("mongodb+srv://rishikr620:Rishi@cgu@cluster0.xxxxx.mongodb.net/mydb", {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
